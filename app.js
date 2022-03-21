@@ -6,6 +6,7 @@ const userRoute = require("./routes/users-route");
 const app = express();
 
 app.use(bodyParser.json());
+//used to connect mongodb
 mongoose.connect(
   "mongodb+srv://admin-ajay:<password>@cluster0.oer4c.mongodb.net/dataDB?retryWrites=true&w=majority"
 );
